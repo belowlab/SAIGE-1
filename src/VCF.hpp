@@ -1,13 +1,12 @@
 #ifndef VCF_HPP
 #define VCF_HPP
 
-// [[Rcpp::depends(RcppArmadillo)]]
-#include <RcppArmadillo.h>
-
 #include "savvy/reader.hpp"
 #include "savvy/region.hpp"
 #include "variant_group_iterator.hpp" 
 
+// [[Rcpp::depends(RcppArmadillo)]]
+#include <RcppArmadillo.h>
 
 
 namespace VCF {

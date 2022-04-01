@@ -1,4 +1,5 @@
 // This includes the main codes to connect C++ and R
+#include "VCF.hpp" // This has to be first for savvy headers to compile
 
 #include <vector>
 #include <thread>         // std::this_thread::sleep_for
@@ -16,7 +17,6 @@
 #include "Main.hpp"
 #include "PLINK.hpp"
 #include "BGEN.hpp"
-#include "VCF.hpp"
 #include "SAIGE_test.hpp"
 #include "UTIL.hpp"
 #include "CCT.hpp"
