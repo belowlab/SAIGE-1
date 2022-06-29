@@ -4,6 +4,7 @@ LABEL maintainer="wzhou@broadinstitute.org"
 
 ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
+ENV TZ=Etc/UTC
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
