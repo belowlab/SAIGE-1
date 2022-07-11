@@ -48,7 +48,6 @@ namespace VCF {
    variant_group_iterator m_it_;
 
    VcfClass(std::string t_vcfFileName,
-            std::string t_vcfFileIndex,
             std::string t_vcfField,
             bool t_isSparseDosageInVcf,
             std::vector<std::string> t_SampleInModel);
@@ -56,7 +55,6 @@ namespace VCF {
  
    // setup VcfClass
    bool setVcfObj(const std::string & t_vcfFileName,
-                  const std::string & t_vcfFileIndex,
                   const std::string & t_vcfField);
    //set up the iterator 
    void set_iterator(std::string & variantList);

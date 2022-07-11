@@ -12,8 +12,6 @@ print(sessionInfo())
 option_list <- list(
   make_option("--vcfFile", type="character",default="",
     help="Path to vcf file."),
-  make_option("--vcfFileIndex", type="character",default="",
-    help="Path to vcf index file. Indexed by tabix. Path to index for vcf file by tabix, .csi file by tabix -p vcf csi file.vcf.gz"),
   make_option("--vcfField", type="character",default="DS",
     help="DS or GT, [default=DS]"),
   make_option("--savFile", type="character",default="",

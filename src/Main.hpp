@@ -127,7 +127,6 @@ void setBGENobjInCPP(std::string t_bgenFileName,
                      std::string t_AlleleOrder);
 
 void setVCFobjInCPP(std::string t_vcfFileName,
-            std::string t_vcfFileIndex,
             std::string t_vcfField,
             std::vector<std::string> & t_SampleInModel);
 

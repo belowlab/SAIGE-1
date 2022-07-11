@@ -49,7 +49,7 @@ void setMAFcutoffs(float minVal, float maxVal){
 }
 
 // [[Rcpp::export]]
-bool setvcfDosageMatrix(const std::string& vcfFileName,  const std::string& vcfFileIndex, const std::string& vcfField){
+bool setvcfDosageMatrix(const std::string& vcfFileName, const std::string& vcfField){
 
   marker_file = savvy::reader(vcfFileName);
   bool isVcfOpen = marker_file.good();

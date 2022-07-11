@@ -27,14 +27,12 @@ using namespace std;
 namespace VCF {
  
   VcfClass::VcfClass(std::string t_vcfFileName,
-            std::string t_vcfFileIndex,
             std::string t_vcfField,
 	    bool t_isSparseDosageInVcf,
             std::vector<std::string> t_SampleInModel)
    {
      bool isVcfOpen;	   
      isVcfOpen = setVcfObj(t_vcfFileName,
-              t_vcfFileIndex,
               t_vcfField);
  
      setPosSampleInVcf(t_SampleInModel);
