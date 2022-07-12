@@ -41,7 +41,6 @@ namespace VCF {
  
   
    bool VcfClass::setVcfObj(const std::string & t_vcfFileName,
-                  const std::string & t_vcfFileIndex,
                   const std::string & t_vcfField)
    {
      //using namespace Rcpp;

@@ -733,12 +733,10 @@ void setBGENobjInCPP(std::string t_bgenFileName,
 
 // [[Rcpp::export]]
 void setVCFobjInCPP(std::string t_vcfFileName,
-            std::string t_vcfFileIndex,
             std::string t_vcfField,
             std::vector<std::string> & t_SampleInModel)
 {
   ptr_gVCFobj = new VCF::VcfClass(t_vcfFileName,
-		  		t_vcfFileIndex,
 				t_vcfField,
 				false,
 				t_SampleInModel);
