@@ -4,7 +4,6 @@
 #' @param bgenFileIndex character. Path to the .bgi file (index of the bgen file)
 #' @param sampleFile character. Path to the file that contains one column for IDs of samples in the bgen file. The file does not contain header lines. 
 #' @param vcfFile character. Path to vcf file
-#' @param vcfFileIndex character. Path to vcf index file. Indexed by tabix. Path to index for vcf file by tabix, .csi file using 'tabix --csi -p vcf file.vcf.gz'
 #' @param vcfField character. genotype field in vcf file to use. "DS" for dosages or "GT" for genotypes. By default, "DS".
 #' @param savFile character. Path to sav file
 #' @param savFileIndex character. Path to index for sav file .s1r
@@ -63,7 +62,6 @@ SPAGMMATtest = function(bgenFile = "",
                  bgenFileIndex = "",
                  sampleFile = "",
                  vcfFile = "",
-                 vcfFileIndex = "",
                  vcfField = "DS",
                  savFile = "",
                  savFileIndex = "",
@@ -278,7 +276,6 @@ SPAGMMATtest = function(bgenFile = "",
     objGeno = setGenoInput(bgenFile = bgenFile,
                  bgenFileIndex = bgenFileIndex,
                  vcfFile = vcfFile,   #not activate yet
-                 vcfFileIndex = vcfFileIndex,
                  vcfField = vcfField,
                  savFile = savFile,
                  savFileIndex = savFileIndex,

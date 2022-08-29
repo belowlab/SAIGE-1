@@ -22,7 +22,6 @@ checkIfSampleIDsExist = function(bgenFile)
 checkGenoInput = function(bgenFile = "",
                  bgenFileIndex = "",
                  vcfFile = "",
-                 vcfFileIndex = "",
                  vcfField = "DS",
                  savFile = "",
                  savFileIndex = "",
@@ -93,7 +92,6 @@ splitreformatMarkerIDinBgen = function(x){
 setGenoInput = function(bgenFile = "",
                  bgenFileIndex = "",
                  vcfFile = "",
-                 vcfFileIndex = "",
                  vcfField = "DS",
                  savFile = "",
                  savFileIndex = "",
@@ -111,7 +109,6 @@ setGenoInput = function(bgenFile = "",
   dosageFileType = checkGenoInput(bgenFile = bgenFile,
                  bgenFileIndex = bgenFileIndex,
                  vcfFile = vcfFile,
-                 vcfFileIndex = vcfFileIndex,
                  vcfField = vcfField,
                  savFile = savFile,
                  savFileIndex = savFileIndex,
@@ -348,7 +345,7 @@ if(FALSE){
 #  anyQueue = anyInclude | anyExclude
 
   if(dosageFileType == "vcf"){
-    setVCFobjInCPP(vcfFile, vcfFileIndex, vcfField, t_SampleInModel = sampleInModel)
+    setVCFobjInCPP(vcfFile, vcfField, t_SampleInModel = sampleInModel)
     if(!is.null(IDsToInclude)){
       SNPlist = paste(c("set1", IDsToInclude), collapse = "\t")
       in_chrom="fake_chrom"

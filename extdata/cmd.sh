@@ -43,7 +43,6 @@ Rscript step1_fitNULLGLMM.R     \
 
      Rscript step2_SPAtests.R        \
         --vcfFile=./input/genotype_100markers_missGT.withchr.vcf.gz    \
-        --vcfFileIndex=./input/genotype_100markers_missGT.withchr.vcf.gz.csi     \
         --vcfField=GT   \
         --SAIGEOutputFile=./output/genotype_100markers_vcf_groupTest_out.txt \
         --LOCO=FALSE    \
@@ -107,7 +106,6 @@ Rscript step1_fitNULLGLMM.R     \
 
        Rscript step2_SPAtests.R        \
     --vcfFile=./input/genotype_100markers_missGT.withchr.vcf.gz    \
-    --vcfFileIndex=./input/genotype_100markers_missGT.withchr.vcf.gz.csi     \
     --vcfField=GT   \
     --SAIGEOutputFile=./output/genotype_100markers_vcf_groupTest_out.txt \
     --LOCO=FALSE    \
@@ -127,7 +125,6 @@ Rscript step1_fitNULLGLMM.R     \
 
 Rscript step2_SPAtests.R        \
       --vcfFile=./input/genotype_100markers.vcf.gz    \
-      --vcfFileIndex=./input/genotype_100markers.vcf.gz.csi     \
       --vcfField=GT   \
       --SAIGEOutputFile=./output/genotype_100markers_marker_vcf_cond.txt_quantitative \
       --chrom=1       \
@@ -161,7 +158,6 @@ Rscript step2_SPAtests.R        \
 
 Rscript step2_SPAtests.R        \
       --vcfFile=./input/genotype_100markers.vcf.gz    \
-      --vcfFileIndex=./input/genotype_100markers.vcf.gz.csi     \
       --vcfField=GT   \
       --SAIGEOutputFile=./output/genotype_100markers_marker_vcf_binary_ER_test \
       --chrom=1       \

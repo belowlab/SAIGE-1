@@ -107,7 +107,6 @@ if(opt$annotation_in_groupTest == "ALL"){
 
 if(packageVersion("SAIGE")>="1.1.3"){
 	generate_LDMat_forMataRegion(vcfFile=opt$vcfFile,
-             vcfFileIndex=opt$vcfFileIndex,
              vcfField=opt$vcfField,
              savFile=opt$savFile,
              savFileIndex=opt$savFileIndex,

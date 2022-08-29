@@ -28,7 +28,6 @@ Rscript step3_LDmat.R   \
 ###generate LD for all markers in VCF for each set in group file --annotation_in_groupTest=ALL
 Rscript step3_LDmat.R   \
       --vcfFile=./input/genotype_100markers.vcf.gz    \
-      --vcfFileIndex=./input/genotype_100markers.vcf.gz.csi     \
       --vcfField=GT   \
       --SAIGEOutputFile=./output/LDmat \
       --chrom=1 \
